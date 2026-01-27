@@ -18,7 +18,7 @@ export default function Header() {
                 <a href="#">Process</a>
                 <a href="#">FAQ</a>
                 <div>
-                    <a href="#" className="bg-accent py-2 px-4 rounded-md text-white">Get Started</a>
+                    <a href="#" className="bg-accent py-2 px-4 rounded-md text-white">Get in touch</a>
                 </div>
             </nav>
             <button onClick={()=>setIsOpen(!isOpen)} className="md:hidden">
