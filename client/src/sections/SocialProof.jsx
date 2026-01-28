@@ -14,7 +14,7 @@ const companies = [
 
 export default function SocialProof() {
     return (
-        <section className="flex flex-col gap-6 text-muted_text items-center">
+        <section className="flex flex-col gap-6 text-muted_text items-center pb-20">
             <p className="text-sm">Trusted by top brands, including</p>
             <div className="flex flex-wrap justify-center gap-12">
                 {companies.map((c)=>(
