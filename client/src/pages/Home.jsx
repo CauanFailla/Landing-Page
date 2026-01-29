@@ -3,6 +3,7 @@ import Hero from "../sections/Hero"
 import SocialProof from "../sections/SocialProof"
 import Services from "../sections/Services"
 import Process from "../sections/Process"
+import FAQs from "../sections/FAQs"
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                 <SocialProof/>
                 <Services/>
                 <Process/>
+                <FAQs/>
             </main>
         </div>
     )
