@@ -4,6 +4,8 @@ import SocialProof from "../sections/SocialProof"
 import Services from "../sections/Services"
 import Process from "../sections/Process"
 import FAQs from "../sections/FAQs"
+import Footer from "../sections/Footer"
+import Contact from "../sections/Contact"
 
 export default function Home() {
     return (
@@ -15,7 +17,9 @@ export default function Home() {
                 <Services/>
                 <Process/>
                 <FAQs/>
+                <Contact/>
             </main>
+            <Footer/>
         </div>
     )
 }
