@@ -6,6 +6,7 @@ import Process from "../sections/Process"
 import FAQs from "../sections/FAQs"
 import Footer from "../sections/Footer"
 import Contact from "../sections/Contact"
+import WhyUs from "../sections/WhyUs"
 
 export default function Home() {
     return (
@@ -15,6 +16,7 @@ export default function Home() {
                 <Hero/>
                 <SocialProof/>
                 <Services/>
+                <WhyUs/>
                 <Process/>
                 <FAQs/>
                 <Contact/>

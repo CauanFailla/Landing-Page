@@ -1,11 +1,13 @@
 export default function Process() {
     return (
-        <section className="py-20">
-            <div className="text-center">
-                <p className="text-muted_text  text-sm">PROCESS</p>
-                <h1 className="text-3xl font-semibold text-primary_text">Process Overview</h1>
-            </div>
-            <div className="flex flex-wrap justify-center gap-10 mt-10 text-sm">
+        <section className="py-24 -mx-5  bg-gray-50 relative">
+            <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"/>
+            <div>
+                <div className="text-center">
+                    <p className="text-accent text-sm">PROCESS</p>
+                    <h1 className="text-3xl font-semibold text-primary_text">Process Overview</h1>
+                </div>
+                <div className="flex flex-wrap justify-center gap-10 mt-10 text-sm">
                 
                 <div className="flex w-80">
                     <div className="mb-1 inline-flex h-8  items-center justify-center rounded-full bg-slate-100 px-2 text-base font-medium text-slate-600 mr-5 ">
@@ -36,7 +38,9 @@ export default function Process() {
                     </div>
                 </div>
                 
+                </div>
             </div>
+            
         </section>
     )
 }

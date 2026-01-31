@@ -8,7 +8,7 @@ export default function Services() {
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"/>
             <div className="relative z-10 mx-auto max-w-6xl px-6">
                 <div className="text-center">
-                    <p className="text-muted_text  text-sm">SERVICES</p>
+                    <p className="text-accent  text-sm">SERVICES</p>
                     <h1 className="text-3xl font-semibold text-primary_text">Expertise</h1>
                     <p className="text-muted_text text-sm m-3">
                         <span className="block">Clear, focused services for growing businesses.</span>

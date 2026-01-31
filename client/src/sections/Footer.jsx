@@ -2,7 +2,7 @@ import { TbSquareLetterDFilled } from "react-icons/tb";
 
 export default function Footer() {
     return (
-        <footer className="bg-gray-100 p-28 pb-2">
+        <footer className="bg-gray-50 p-28 pb-2">
             <div className="flex justify-between">
                 <div>
                     <div className="flex items-center gap-1">

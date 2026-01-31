@@ -1,8 +1,12 @@
+import { FaArrowRight } from "react-icons/fa";
+
+
 export default function Hero() {
     return (
         <section className="flex flex-col items-center pt-28 pb-16">
-            <div className="mb-6 bg-accent text-accent text-sm bg-opacity-15 rounded-full px-4 py-1">
-                <p>View featured project &gt;</p>
+            <div className="flex items-center cursor-pointer gap-1 mb-6 bg-accent text-accent text-sm bg-opacity-15 rounded-full px-4 py-1">
+                <p>View featured project</p>
+                <FaArrowRight fontSize={10}/>
             </div>
             <h1 className="text-center text-4xl font-semibold space-y-5 tracking-tight md:text-[3.25rem]">
                 <span className="block">High-quality web experiences</span>

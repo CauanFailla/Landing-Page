@@ -15,7 +15,7 @@ export default function FAQs() {
     return (
         <section className="flex flex-col items-center py-20 ">
             <div className="text-center">
-                <p className="text-muted_text text-sm">FAQs</p>
+                <p className="text-accent text-sm">FAQs</p>
                 <h1 className="text-3xl font-semibold text-primary_text">Common Questions</h1>
             </div>
             <div className="w-[600px] mt-5">
