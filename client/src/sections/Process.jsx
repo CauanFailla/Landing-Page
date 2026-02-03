@@ -1,46 +1,30 @@
+const processes = [
+    {title: "Planning", description: "We discuss your goals, requirements, and timeline."},
+    {title: "Development", description: "We design and build a clean, scalable solution."},
+    {title: "Launch", description: "Project launch and we provide post-launch support if needed."}
+]
+
 export default function Process() {
     return (
-        <section className="py-24 -mx-5  bg-gray-50 relative">
+        <section className="relative -mx-5 py-24 bg-gray-50">
             <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-white to-transparent"/>
-            <div>
+            <div className="mx-auto max-w-6xl px-5">
                 <div className="text-center">
                     <p className="text-accent text-sm">PROCESS</p>
-                    <h1 className="text-3xl font-semibold text-primary_text">Process Overview</h1>
+                    <h2 className="text-3xl font-semibold text-primary_text">Process Overview</h2>
                 </div>
-                <div className="flex flex-wrap justify-center gap-10 mt-10 text-sm">
-                
-                <div className="flex w-80">
-                    <div className="mb-1 inline-flex h-8  items-center justify-center rounded-full bg-slate-100 px-2 text-base font-medium text-slate-600 mr-5 ">
-                        01
-                    </div>
-                    <div>
-                        <h1 className="text-lg font-semibold">Planning</h1>
-                        <p className="text-muted_text ">We discuss your goals, requirements, and timeline.</p>
-                    </div>
-                </div>
-                <div className="flex w-80">
-                    <div className="mb-1 inline-flex h-8  items-center justify-center rounded-full bg-slate-100 px-2 text-base font-medium text-slate-600 mr-5 ">
-                        02
-                    </div>
-                    <div>
-                        <h1 className="text-lg font-semibold">Development</h1>
-                        <p className="text-muted_text">We design and build a clean, scalable solution</p>
-                    </div>
-                    
-                </div>
-                <div className="flex w-80">
-                    <div className="mb-1 inline-flex h-8 items-center justify-center rounded-full bg-slate-100 px-2 text-base font-medium text-slate-600 mr-5 ">
-                        03
-                    </div>
-                    <div className="">   
-                        <h1 className="text-lg font-semibold">Launch</h1>
-                        <p className="text-muted_text">Project launch and we provide post-launch support if needed</p>
-                    </div>
-                </div>
-                
-                </div>
+                <ol className="flex flex-wrap justify-center gap-10 mt-10 text-sm">
+                    {processes.map((p, i)=>(
+                        <li key={p.title} className="flex w-80">
+                            <span aria-hidden="true" className="mb-1 inline-flex h-8  items-center justify-center rounded-full bg-slate-100 px-2 text-base font-medium text-slate-600 mr-5 ">0{i+1}</span>
+                            <div>
+                                <h3 className="text-lg font-semibold">{p.title}</h3>
+                                <p className="text-muted_text ">{p.description}</p>
+                            </div>
+                        </li>
+                    ))}
+                </ol>
             </div>
-            
         </section>
     )
 }

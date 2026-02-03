@@ -1,6 +1,5 @@
 import { MdOutlineMilitaryTech } from "react-icons/md";
-import { AiFillControl } from "react-icons/ai";
-import { AiOutlineApartment } from "react-icons/ai";
+import { AiFillControl, AiOutlineApartment } from "react-icons/ai";
 import { TbSquareLetterAFilled } from "react-icons/tb";
 import { PiWaveSquareBold } from "react-icons/pi";
 
@@ -14,13 +13,13 @@ const companies = [
 
 export default function SocialProof() {
     return (
-        <section className="flex flex-col gap-6 text-muted_text items-center pb-20">
+        <section className="flex flex-col items-center gap-6 pb-20 text-muted_text">
             <p className="text-sm">Trusted by top brands, including</p>
-            <div className="flex flex-wrap justify-center gap-12">
+            <div className="flex flex-wrap justify-center gap-10">
                 {companies.map((c)=>(
-                    <div className="flex gap-1  items-center">
-                        {<c.logo size={20}/>}
-                        {c.title}
+                    <div key={c.title} className="flex gap-1 items-center">
+                        <c.logo aria-hidden="true" size={20}/>
+                        <span>{c.title}</span> 
                     </div>
                 ))}
             </div>
